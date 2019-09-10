@@ -14,5 +14,5 @@ const foobar=()=>{
   let oldLine = document.getElementById("oldline").value;
   let newLine = document.getElementById("newline").value;
   const newProg = moveSourceTo(lines,+oldLine,+newLine)
-  document.getElementById('output').innerText = newProg.join("\n");
+  document.getElementById('output').value = newProg.join("\n");
 }
