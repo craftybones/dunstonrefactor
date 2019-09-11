@@ -2,24 +2,37 @@
   <head>
     <script src="source.js"></script>
   </head>
-  <body>
+<body>
+  <div class="container">
     <div>
-      <label for="sourcecode">Source Code</label>
-      <textarea name="foo" id="sourcecode" cols="30" rows="10"></textarea>
-      
+      <div>
+        <label for="sourcecode">Old source Code</label>
+      </div>
+
+      <textarea name="foo" id="sourcecode" cols="30" rows="20" oninput="foobar()"></textarea>
+      <div>
+        <div>
+          <label for="oldline">old line number</label>
+
+        </div>
+        <input id="oldline" type="number" value="10" min="10" onchange="foobar()"> </div>
+
     </div>
 
     <div>
-      <label for="oldline">old line number</label>
-      <input id="oldline" type="number" value="10" min="10" onchange="foobar()"></div>
-    <div>
-      <label for="newline">new line number</label>
-      <input id="newline" type="number" value="20" min="20" onchange="foobar()"></div>
-    
-    <div>
-      <label for="output">new source code</label>
-      <textarea name="output" readonly="true" id="output" cols="30" rows="10"></textarea>
+      <div>
+        <label for="output">New source code</label></div>
+      <textarea name="output" readonly="true" id="output" cols="30" rows="20"></textarea>
+            <div>
+        <div>
+          <label for="newline">new line number</label></div>
+        <input id="newline" type="number" value="20" min="20" onchange="foobar()"></div>
+
     </div>
-  </body>
+    
+  </div>
+
+</body>
+
   
 </html>
