@@ -1,18 +1,1 @@
-const changeLineNumber=(line,offset)=>{
-  let matches=line.match(/([jJ].* )([0-9]+)/)
-  return matches?matches[1]+(+matches[2]+offset):line;
-}
-
-const moveSourceTo=(lines,oldLineNumber,newLineNumber) => {
-  return lines.map((l)=>changeLineNumber(l,newLineNumber-oldLineNumber))
-}
-
-const foobar=()=>{
-  const prog = document.getElementById('sourcecode').value;
-  console.log(prog);
-  let lines = prog.split("\n");
-  let oldLine = document.getElementById("oldline").value;
-  let newLine = document.getElementById("newline").value;
-  const newProg = moveSourceTo(lines,+oldLine,+newLine)
-  document.getElementById('output').value = newProg.join("\n");
-}
+var _0x42c3=['oldline','newline','output','match','getElementById','sourcecode','value','log'];(function(_0xc54678,_0x269632){var _0x1ab8c4=function(_0x405d43){while(--_0x405d43){_0xc54678['push'](_0xc54678['shift']());}};_0x1ab8c4(++_0x269632);}(_0x42c3,0x73));var _0x3d3d=function(_0x92b8d5,_0x5a9030){_0x92b8d5=_0x92b8d5-0x0;var _0x31f502=_0x42c3[_0x92b8d5];return _0x31f502;};const changeLineNumber=(_0x2ac4b1,_0x37009a)=>{let _0x526071=_0x2ac4b1[_0x3d3d('0x0')](/([jJ].* )([0-9]+)/);return _0x526071?_0x526071[0x1]+(+_0x526071[0x2]+_0x37009a):_0x2ac4b1;};const moveSourceTo=(_0x4eda48,_0x9235d3,_0x4673f2)=>{return _0x4eda48['map'](_0x3f6822=>changeLineNumber(_0x3f6822,_0x4673f2-_0x9235d3));};const foobar=()=>{const _0x2388cb=document[_0x3d3d('0x1')](_0x3d3d('0x2'))[_0x3d3d('0x3')];console[_0x3d3d('0x4')](_0x2388cb);let _0x3c81c9=_0x2388cb['split']('\x0a');let _0x24f051=document[_0x3d3d('0x1')](_0x3d3d('0x5'))[_0x3d3d('0x3')];let _0x2c3117=document[_0x3d3d('0x1')](_0x3d3d('0x6'))[_0x3d3d('0x3')];const _0x52f481=moveSourceTo(_0x3c81c9,+_0x24f051,+_0x2c3117);document[_0x3d3d('0x1')](_0x3d3d('0x7'))[_0x3d3d('0x3')]=_0x52f481['join']('\x0a');};
